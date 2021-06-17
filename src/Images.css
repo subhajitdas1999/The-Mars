@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.images__body{
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("https://mars.nasa.gov/system/content_pages/main_images/418_marsglobe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  padding:30px;
+}
+
+.container {
+  margin-top: 100px;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.images__error {
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: aliceblue;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.noImage__error{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.images__calender {
+    text-align: center;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  background-color: white;
+  border-radius: 5px;
+
+}
+
+.calender__button{
+   
+   font-weight: bold !important;
+    width: fit-content !important;
+    
+    
+}

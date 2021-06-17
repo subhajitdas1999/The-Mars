@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap");
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.ingenuity__video {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.ingenuity__video video {
+  
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.ingenuity__techDetails {
+  background-color: #fdefdd;
+  padding: 2px;
+}
+
+.ingenuity__about {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.heading__animation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ingenuity__about__heading {
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 3.5rem;
+  
+  color: white;
+  position: relative;
+}
+.ingenuity__about__heading::before {
+  content: "Know Ingenuity more . . .";
+  width: 0%;
+  height: 100%;
+  color: rgb(206, 125, 3);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-right: 2px solid black;
+  overflow: hidden;
+  animation: animation 3s steps(28) infinite;
+  white-space: nowrap;
+  --webkit-animation: animation 3s steps(28) infinite;
+}
+
+@keyframes animation {
+  0% {
+    width: 0%;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+
+@media only screen and (max-width:600px){
+  .ingenuity__about__heading{
+    font-size: 2rem;
+  }
+} 
+
+.ingenuity__aboutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about__img img {
+  width: 100%;
+  object-fit: contain;
+
+  animation: bittu 2.5s linear infinite;
+}
+
+@keyframes bittu {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(202, 202, 202);
+}
+
+th,
+td {
+  padding: 20px 10px;
+  border-bottom: 1px solid grey;
+  text-align: left;
+}
+
+th {
+  font-family: "Montserrat", sans-serif;
+}
+
+td {
+  font-family: "Roboto Slab", serif;
+  /* font-weight: bold; */
+}
+
+.ingenuity__carasoul {
+  padding: 20px 10px;
+  background-color: rgb(228, 228, 253);
+}

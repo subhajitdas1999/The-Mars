@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&display=swap");
+
+.whymars_body {
+  padding: 30px;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("https://media.wired.com/photos/59267ed78d4ebc5ab806a790/master/pass/Mars_Op-Ed_200144771-001.jpg");
+  color: rgb(252, 252, 252);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgb(0,0,0,0.6);
+  background-blend-mode: multiply;
+}
+
+.whymars_body > * {
+  max-width: 500px;
+  margin: 70px 0;
+}
+
+.all_heading {
+  font-family: "PT Sans", sans-serif;
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+.all_para {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+}
+
+.whymars__details__para {
+  position: relative;
+}
+
+.whymars__details__para::after {
+  content: "-By Elon Mask";
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+}
+
+.right_div {
+  margin-left: auto;
+}
+
+.whymars__marshas {
+  padding: 10px;
+  margin-top: 100px;
+}
+
+.has__props {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  padding: 10px;
+}
+
+.has__props > h4 {
+  flex: 1;
+}
+
+.whymars_more_info{
+  margin: auto;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+}
+
+.whymars_more_info a{
+  text-decoration: none;
+  color: rgb(248, 9, 9);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+
